@@ -10,7 +10,7 @@ layout: default
     <meta name="theme-color" content="#1a1a1a">
     <link rel="icon" href="/assets/icons/favicon.ico">
 	<link rel="stylesheet" href="/assets/css/local/style.css">
-    <style type="text/css"></style>
+    <style type="text/css">h1{color: #ccc; max-width: 600px; position: relative; margin: 20px auto;}</style>
 {% comment %}<!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json"> -->
 {% endcomment %}
@@ -34,6 +34,7 @@ layout: default
 	<!--  -->
 	<div class="main-container" id="main">
 		<div class="popular-searches clearfix">
+		    <h1>Катамаран пвх SEA FISHER 480</h1>
 			<div class="frame-container">
 				<div class="photo-box" data-model="seafisher480"></div>
 				<div class="mod-nav" data-bind="template: {name: 'modnav'}"></div>
@@ -49,23 +50,26 @@ layout: default
 				<li><a href="" title="">БАМБАРБЕА</a></li>
 			</ul>
 {% endcomment %}
+{% comment %}
 			<div class="footer-related clearfix">
 				<ul class="clearfix bottom">
-					<li class="hdMbN"><span>Related links: </span></li>
+					<li class="hdMbN"><span>Похожие товары: </span></li>
 					<li><a href="" title="">3D Boat Models</a></li>
 					<li><a href="" title="">лодка FISHER</a></li>
 					<li><a href="" title="">3D TRAVEL</a></li>
 				</ul>
 			</div>
+{% endcomment %}			
 		</div>
 		<ul class="privacy clearfix">
-			<li><a href="#" target="_blank">Privacy Policy</a></li>
+			<li><a href="https://boathouse.ua" target="_blank">&copy; boathouse.ua</a></li>
 		</ul>
 	</div>
-
+{% comment %}
 {% for model in site.data.demo %}
     <div class="btn onw3d_btn" data-model="{{ model.model }}">{{ model.name }}</div>
 {% endfor %}
+{% endcomment %}
 
 <!-- Templates (temporary) -->
 <template id="mod3d"><div class="mod-cont">
