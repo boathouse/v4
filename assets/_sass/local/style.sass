@@ -276,13 +276,21 @@ ul.privacy li
     margin-left: 10px
 
 ul.privacy li a
-	font-size: 12px
-	color: #ccc
-	text-transform: capitalize
+    font-size: 12px
+    color: #ccc
+    text-transform: capitalize
+    & svg
+        position: relative
+        top: 1px
+        margin-right: 1px
+        width: 12px
+        fill: #bbb
 
 ul.privacy li a:hover
     text-decoration: none
     color: #e6ac00
+    & svg
+        fill: #e6ac00
 
 .privacy 
 	text-align: right

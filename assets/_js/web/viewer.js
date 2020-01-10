@@ -142,7 +142,7 @@ function init() {
     controls.zoomSpeed = 0.4;
     controls.rotateSpeed = 0.3;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.4;
+    controls.autoRotateSpeed = 0.6;
 
     camera.lookAt(controls.target);
 
