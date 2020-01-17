@@ -10,7 +10,7 @@ layout: default
     <meta name="theme-color" content="#1a1a1a">
     <link rel="icon" href="/assets/icons/favicon.ico">
 	<link rel="stylesheet" href="/assets/css/local/style.css">
-    <style type="text/css">h1{color: #ccc; max-width: 600px; position: relative; margin: 20px auto;}</style>
+    <style type="text/css">h1{color: #ccc; max-width: 600px; position: relative; margin: 20px auto;}.onw3d_btn{color: #eee; cursor: pointer; border:1px solid #999; padding:5px 20px; border-radius: 16px; margin-bottom:20px; display: inline-block;}</style>
 {% comment %}<!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json"> -->
 {% endcomment %}
@@ -40,6 +40,7 @@ layout: default
 				<div class="mod-nav" data-bind="template: {name: 'modnav'}"></div>
 				<div class="mod3d" data-bind="template: {name: 'mod3d'}"></div>
 			</div>
+			<div class="btn onw3d_btn" data-model="stream300">STREAM 300 <sup style="color:#999">человек на борту</sup></div>
 {% comment %}
 			<ul class="clearfix first">
 				<li><a href="" title="">3D Models</a></li>
@@ -71,6 +72,7 @@ layout: default
     <div class="btn onw3d_btn" data-model="{{ model.model }}">{{ model.name }}</div>
 {% endfor %}
 {% endcomment %}
+
 
 <!-- Templates (temporary) -->
 <template id="mod3d">

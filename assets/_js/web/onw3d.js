@@ -359,7 +359,7 @@ var Onw3dvw = function(model) {
               o.model = container.getAttribute("data-model") || '404';
               if (o.model != '404') _w.init();
               else container.innerHTML = 'model not found';
-              ajax_get("https://boathouse.ua/index.php?route=get_json_data&pname=" + o.model, function (data) {
+              ajax_get(u + "get_json_data&pname=" + o.model, function (data) {
 
                   if (Object.keys(data.options).length > 0) {
 
@@ -414,7 +414,7 @@ var Onw3dvw = function(model) {
                   });
                 }
 
-                if(o.model && o.model!="") { _w.init(); }
+                if(o.model && o.model != "") {_w.init();}
 
               });
           }); 
