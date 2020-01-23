@@ -24,6 +24,7 @@ exclude:
   - README.md
   - CNAME
   - node_modules
+  - scenes
   - package.json
   - package-lock.json
   - gulpfile.js
